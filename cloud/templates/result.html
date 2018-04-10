@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h3 class='center-align'>{{twitter_id}}</h3>
+<hr>
+
+{% load static%}
+<img src="{% static "pictures/result.png" %}" alt="My image" style="max-width: 100%" />
+
+
+<br>
+<a href="/">Go back.</a>
+
+
+
+
+
+
+{% endblock %}
+    

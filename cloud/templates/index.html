@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- <h1 class='center-align'>Hello from inside</h1> -->
+
+
+<form action="{% url 'result' %}" method="post">
+    {% csrf_token %}
+    <label for="twitter_id">twitter_id</label><br />
+    <input type="text" name="twitter_id" id="twitter_id">
+    <br>
+    <input type="submit" value="Submit" class='btn'/>
+</form>
+<br>
+<!-- <a href="/">Go back.</a> -->
+
+
+
+
+
+
+{% endblock %}
+    
